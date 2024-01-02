@@ -1,68 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Module3 - Our Menu</title>
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/styles.css">
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css\styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
+
 <body>
 
-<!-- Navbar -->
-<nav class="navbar navbar-default navbar-fixed-top">
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu-dropdown" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#">Food, LLC &copy;</a>
+    <!-- Navbar -->
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Food, LLC</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#"><span class="glyphicon glyphicon-cutlery"></span> Chicken</a></li>
+                    <li><a href="#"><span class="glyphicon glyphicon-fire"></span> Beef</a></li>
+                    <li><a href="#"><span class="glyphicon glyphicon-cutlery"></span> Sushi</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Heading -->
+    <h1 class="text-center">Our Menu</h1>
+
+    <!-- Content Section -->
+    <div id="main-content" class="container">
+        <div id="home-tiles" class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+                <div id="chickstory">
+                    <h2>Chicken</h2>
+                    <p>
+                        Delicious chicken dishes that will leave you craving for more. From crispy fried chicken to succulent grilled pieces, our menu offers a variety of options to satisfy your chicken cravings. Each dish is prepared with the finest ingredients and seasoned to perfection. Explore our chicken menu and experience the ultimate delight in every bite.
+                    </p>
+                    <p>
+                        Our chefs use a blend of unique spices and flavors to create mouthwatering chicken recipes. Whether you prefer classic fried chicken or prefer something with a bit of a kick, we have something for everyone. Join us for a culinary journey and indulge in the flavors of our signature chicken dishes.
+                    </p>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="collapse navbar-collapse" id="menu-dropdown">
-      <ul class="nav navbar-nav visible-xs">
-        <li><a href="#">Chicken</a></li>
-        <li><a href="#">Beef</a></li>
-        <li><a href="#">Fish</a></li>
-      </ul>
+<footer>
+  <div class="contact-info">
+    <div>
+      <p>Email: info@foodllc.com</p>
+      <p>Phone: +1 (123) 456-7890</p>
+    </div>
+    <div>
+      <p>&copy; 2023 Food, LLC. All rights reserved.</p>
     </div>
   </div>
-</nav>
-
-
-  <!-- Page Heading -->
-  <div class="text-center">
-    <h1>Our Menu</h1>
-  </div>
-
-  <!-- Content Section -->
-  <div class="container">
-    <div id="p1">
-      <h1>Chicken</h1>
-      jfgjfjwgjfwsjafjbasfjbfjsabjabs
-    </div>
-
-    <div id="p2">
-      <h2>Beef</h2>
-      ebsvjbsfjbsbsjhqwbhjwfjhgfhjsafhjafsjhasfasf
-    </div>
-
-    <div id="p3">
-      <h3>Fish</h3>
-      jkwgfgwfkgfwahjshgkjhsjghsjhgkjs
-    </div>
-  </div>
-
-  <!-- Footer -->
-<footer class="text-center">
-  <p>Contact Us:</p>
-  <p>Email: info@foodllc.com</p>
-  <p>Phone: +1 (123) 456-7890</p>
-  <p>&copy; 2023 Food, LLC. All rights reserved.</p>
 </footer>
 
-
 </body>
+
 </html>

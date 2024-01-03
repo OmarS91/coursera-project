@@ -27,24 +27,16 @@ $(function () {
   document.addEventListener("DOMContentLoaded", function (event) {
     showLoading("#main-content");
     $ajaxUtils.sendGetRequest(
-      allCategoriesUrl,
-      buildAndShowHomeHTML,
-      true
-    );
-  });
-
-  function buildAndShowHomeHTML(categories) {
-    $ajaxUtils.sendGetRequest(
       homeHtmlUrl,
       function (homeHtml) {
         var chosenCategory = chooseRandomCategory(categories);
         var homeHtmlToInsertIntoMainPage = insertProperty(homeHtml, "randomCategoryShortName", chosenCategory.short_name);
         insertHtml("#main-content", homeHtmlToInsertIntoMainPage);
-        dc.loadMenuItems(chosenCategory.short_name);
+        $dc.loadMenuItems(chosenCategory.short_name);
       },
       false
     );
-  }
+  });
 
   function chooseRandomCategory(categories) {
     var randomArrayIndex = Math.floor(Math.random() * categories.length);
